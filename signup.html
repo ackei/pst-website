@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Sign Up</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signup.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form action="getFormInfo.php" method="POST" class="form-signin">
+        <h2 class="form-signin-heading">Registration</h2>
+        <label for="first_name">First Name: </label>
+        <input type="text" name="first_name" class="form-control" placeholder="First Name" required autofocus>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" class="form-control" placeholder="Last Name" required autofocus>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" class="form-control" min="1900-01-01" /><br />
+        <label for="sex">Sex:</label>
+        <br>
+        <input type="radio" name="sex" value="male" checked/>Male<br />
+        <input type="radio" name="sex" value="female" />Female<br />
+        <input type="radio" name="sex" value="other" />Other<br />
+        <br>
+        <label for="email">Email address:</label>
+        <input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="password">Password:</label>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password"name="confirm_Password" class="form-control" placeholder="Confirm Password" required>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      </form>
+      <div style="text-align:center;">
+      <p><a class="btn btn-primary btn-lg" href="index.html" role="button">Back</a></p>
+      </div
+
+    </div>
+  </body>
+</html>
